@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: $bg-color;
+  margin: 0;
+  color: $white;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+}
