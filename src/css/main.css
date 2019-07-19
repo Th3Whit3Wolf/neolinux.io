@@ -1,4 +1,4 @@
-@import url("../fonts/FiraSans-Regular.ttf");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  font-family: "Fira Sans Regular", sans-serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   background-color: #292b2e;
   color: #a3a3a3;
   line-height: 1.6;
