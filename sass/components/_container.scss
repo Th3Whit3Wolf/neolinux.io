@@ -1,6 +1,5 @@
 .container {
-  max-width: 1180px;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 3rem;
+  position: relative;
+  background-color: $menu-bg;
+  overflow: hidden;
 }
