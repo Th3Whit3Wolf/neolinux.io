@@ -68,7 +68,11 @@ a:hover {
 }
 
 @media screen and (max-width: 580px) {
-  a {
+  .nav {
+    display: inline-block;
+  }
+  .nav a {
+    padding: 0px !important;
     text-indent: 0px !important;
     background: none !important;
   }
