@@ -5,8 +5,13 @@ $grey: #292b2e;
 $purplGrey: #827591;
 $dPurplGrey: #373040;
 $mag: #a45bad;
+$DSgreen: #6cb12a;
 
-// Menu Colours
+$items: 6;
+$transition-duration: 0.5s;
+$transition-delay: 0.05s;
+
+$menu-bg: $base;
 $text-color: $white;
 $menu-bg: $base;
 $menu-hover: darken($base, 15%);
