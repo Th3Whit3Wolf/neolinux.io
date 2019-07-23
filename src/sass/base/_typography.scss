@@ -1,4 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap");
+@font-face {
+    font-family: 'fira_sans_compressedregular';
+    src: url('firasanscompressed-regular-webfont.eot');
+    src: url('firasanscompressed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/firasanscompressed-regular-webfont.woff2') format('woff2'),
+        url('firasanscompressed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 * {
     box-sizing: border-box;
@@ -10,7 +20,7 @@ body {
 }
 
 body {
-    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'fira_sans_compressedregular', sans-serif;
     background-color: $grey;
     color: $white;
     line-height: 1.6;
