@@ -2,35 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Welcome – Neolinux</title>
+    <title>Coming Soon</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <input id="toggle" type="checkbox" />
+      <div class="hero">
+        <p>Next Generation of Linux</p>
+        <h1>COMING SOON</h1>
 
-        <label class="toggle-container" for="toggle">
-          <span class="button button-toggle"></span>
-        </label>
-
-        <!-- The Nav Menu -->
-        <nav class="nav">
-          <a class="nav-item" href="">Home</a>
-          <a class="nav-item" href="">Get Started</a>
-          <a class="nav-item" href="">Downloads</a>
-          <a class="nav-item" href="">Project</a>
-          <a class="nav-item" href="">Support</a>
-          <a class="nav-item" href="">Get Involved</a>
-        </nav>
+        <hr />
+        <p id="launch"></p>
       </div>
     </header>
-    <div class="content">
-      <h1>Neolinux</h1>
-      <h2>The next generation of Linux</h2>
-      <p class="lead">
-        The future is coming..
-      </p>
-    </div>
   </body>
+  <script>
+    var countDownDate = new Date("December 6, 2019 00:00:00").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+
+      var distance = countDownDate - now;
+
+      //var months = Math.floor(distance / (1000 * 60 * 60 * 24 * 30.4375));
+      var days = Math.floor(
+        (distance % (1000 * 60 * 60 * 24 * 30.4375)) / (1000 * 60 * 60 * 24)
+      );
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("launch").innerHTML =
+        days + "d " + hours + "h " + minutes + "min " + seconds + "s";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("launch").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  </script>
 </html>
